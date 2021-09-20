@@ -9,4 +9,6 @@ spec:
   - image: mboscovich/network-tools:latest
     imagePullPolicy: IfNotPresent
     name: network-tool
+    command: [ "/bin/bash", "-c", "--" ]
+    args: [ "while true; do sleep 30; done;" ]
   restartPolicy: Always
